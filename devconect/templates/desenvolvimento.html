@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Desenvolvimento - DevConect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="background">
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+        <h2>Desenvolvimento</h2>
+        <div class="button-group">
+            <a class="big-button" href="{{ url_for('materia', area='desenvolvimento', nome='bancos_de_dados') }}">Bancos de Dados</a>
+            <a class="big-button" href="{{ url_for('materia', area='desenvolvimento', nome='apis') }}">APIs</a>
+            <a class="big-button" href="{{ url_for('materia', area='desenvolvimento', nome='frameworks') }}">Frameworks</a>
+        </div>
+    </div>
+</body>
+</html>

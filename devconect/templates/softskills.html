@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Soft Skills - DevConect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="background">
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+        <h2>Soft Skills</h2>
+        <div class="button-group">
+            <a class="big-button" href="{{ url_for('materia', area='softskills', nome='gestao_de_tempo') }}">Gestão de Tempo</a>
+            <a class="big-button" href="{{ url_for('materia', area='softskills', nome='trabalho_em_equipe') }}">Trabalho em Equipe</a>
+            <a class="big-button" href="{{ url_for('materia', area='softskills', nome='comunicacao_eficaz') }}">Comunicação Eficaz</a>
+        </div>
+    </div>
+</body>
+</html>

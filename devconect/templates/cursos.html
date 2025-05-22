@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos - DevConect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="background">
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+        <h2>Cursos Disponíveis</h2>
+        <div class="button-group">
+            <a href="{{ url_for('desenvolvimento') }}" class="big-button">Desenvolvimento</a>
+            <a href="{{ url_for('softskills') }}" class="big-button">Softskills</a>
+        </div>
+    </div>
+</body>
+</html>
+

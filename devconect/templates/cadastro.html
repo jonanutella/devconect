@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>DevConect - Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="background">
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="DevConect" class="logo">
+        <h2>Cadastra-se</h2>
+        <form method="POST">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <input type="password" name="confirmar" placeholder="Confirme sua senha" required>
+            <button type="submit">Criar</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
